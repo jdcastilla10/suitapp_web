@@ -34,8 +34,8 @@ export const LoginPage = () => {
     setFormState,
   } = useForm(
     {
-      usuario: "jdcastilla",
-      password:"1234567890",
+      usuario: "",
+      password:"",
       candidato:'',
     },
     formValidation
