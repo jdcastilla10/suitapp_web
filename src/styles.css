@@ -1,0 +1,69 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.box-shadow {
+    box-shadow: 1px 2px 1px rgba(0,0, 0, 0.2);
+}
+
+.background-page{
+    background-color: #fcfcfc !important;
+}
+
+.color-text{
+    color: #020202 !important; 
+}
+
+.btn-success{
+    background: #1F3D80!important;
+    border-radius: 8px!important;
+    color: #070707 !important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    height: 48px;
+    letter-spacing: .14em;
+    line-height: 21px;
+    padding: 16px;
+    text-align: center;
+}
+
+.form-control {
+    align-items: center;
+    border: 1px solid #698394 !important;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+    /* height: 48px; */
+    justify-content: center;
+    line-height: 32px;
+    padding: 8px 16px;
+    
+}
+.form-control:focus {
+    border-color:#364722 !important; /* Cambia esto por el color que desees */
+    /* Otros estilos específicos para el estado de enfoque si es necesario */
+}
+
+.imagenUni {
+  height: 7rem;
+  max-width: 100%;
+}
+
+.form-control-error {
+    align-items: center;
+    border: 1px solid #e75858 !important;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+    /* height: 48px; */
+    justify-content: center;
+    line-height: 32px;
+    padding: 8px 16px;
+}
