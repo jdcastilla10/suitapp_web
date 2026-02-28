@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { Navigate, Route, Routes } from "react-router-dom"
+import { useContext } from 'react'
+import { Route, Routes } from "react-router-dom"
 import { LoginPage } from '../pages/LoginPage'
 import { ListaConsultas } from '../pages/ListaConsultas'
 import { CircleLoader } from 'react-spinners';
@@ -7,6 +7,7 @@ import { AuthContext } from '../context/AuthContext'
 import { ListaVotantes } from '../pages/ListaVotantes';
 import { ReporteVotantes } from '../pages/ReporteVotantes';
 import { PrivateRoute } from './PrivateRoute';
+import { ConsultaReportes } from '../pages/ConsultasReports';
 
 export const AppRouter = () => {
 
@@ -36,7 +37,18 @@ export const AppRouter = () => {
                       <ReporteVotantes/>
                     </PrivateRoute>
                   } 
-            />
+                  />
+                <Route 
+                  path="/consultaReportes" 
+                  element={
+                    <PrivateRoute 
+                      allowedUser="ematinez" 
+                      user={user}
+                    >
+                      <ConsultaReportes/>
+                    </PrivateRoute>
+                  } 
+                  />
 
           </>
               

@@ -1,14 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import http from '../services/http';
 import { Endpoint } from '../constants/API';
 
-
-
-
 export const ReporteVotantes = () => {
-
-
     const [user, setUser] = useState('');
     const [disabled, setDisabled] = useState(false);
     useEffect(() => {

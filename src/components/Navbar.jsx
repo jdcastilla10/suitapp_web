@@ -60,7 +60,12 @@ useEffect(() => {
         Descargar Reporte
       </button>:null
       }
-      
+      <button
+        className="text-white py-2 px-4 text-sm"
+        onClick={() =>navigate("/consultaReportes")}
+      >
+        Consulta Reportes
+      </button>
       <button
         className="text-white py-2 px-4 text-sm"
         onClick={cerrarSesion}
