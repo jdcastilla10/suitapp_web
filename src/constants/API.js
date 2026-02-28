@@ -10,6 +10,7 @@ export const Endpoint = {
     getVoterName:(dni,codlid,candidato)=>`${BASEURL}/votantes?dni=${dni}&codlid=${codlid}&candidato=${candidato}`,
     updateVoterState:(dni,codusu,candidato)=>`${BASEURL}/votantes?dni=${dni}&candidato=${candidato}&codusu=${codusu}`,
     getVoterByCandidate:(candidato)=>`${BASEURL}/votantes/all?candidato=${candidato}`,
+    getVoterByleader:(candidato,codlid)=>`${BASEURL}/votantes/reporte?candidato=${candidato}&codlid=${codlid}`,
 };
 
     

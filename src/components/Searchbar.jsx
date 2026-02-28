@@ -32,6 +32,11 @@ const SearchBar = ({candidato, filter, consulta,codLider}) => {
         filter([])
       }finally {
       setLoading(false);
+       onInputChange({
+    target: {
+      name: "leader",
+      value: ""
+    }})
   }
   }
   const fetchVotante=async()=>{ 
