@@ -52,7 +52,7 @@ useEffect(() => {
         </div>
       </button>
       {
-        user.usuario==='ematinez'?
+        user.estado==='3'?
         <button
         className="text-white py-2 px-4 text-sm"
         onClick={() =>navigate("/reporte")}
@@ -60,12 +60,15 @@ useEffect(() => {
         Descargar Reporte
       </button>:null
       }
+      {
+        user.estado==='3'?
       <button
         className="text-white py-2 px-4 text-sm"
         onClick={() =>navigate("/consultaReportes")}
       >
         Consulta Reportes
-      </button>
+      </button>:null
+      }
       <button
         className="text-white py-2 px-4 text-sm"
         onClick={cerrarSesion}

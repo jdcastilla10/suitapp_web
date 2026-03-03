@@ -31,7 +31,7 @@ export const AppRouter = () => {
                   path="/reporte" 
                   element={
                     <PrivateRoute 
-                      allowedUser="ematinez" 
+                      allowedUser="3" 
                       user={user}
                     >
                       <ReporteVotantes/>
@@ -42,7 +42,7 @@ export const AppRouter = () => {
                   path="/consultaReportes" 
                   element={
                     <PrivateRoute 
-                      allowedUser="ematinez" 
+                      allowedUser="3" 
                       user={user}
                     >
                       <ConsultaReportes/>

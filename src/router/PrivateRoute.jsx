@@ -6,7 +6,7 @@ export const PrivateRoute = ({ children, allowedUser, user }) => {
     return <Navigate to="/" />;
   }
 
-  if (allowedUser && user.usuario !== allowedUser) {
+  if (allowedUser && user.estado !== allowedUser) {
     return <Navigate to="/" />;
   }
 
